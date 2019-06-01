@@ -28,7 +28,7 @@
 
         <p>
             <label for="searchTerm">Keyword:</label>
-            <input type="text" name="searchTerm" id="searchTerm" />
+            <input type="text" name="searchTerm" id="searchTerm" th:value="${default}"/>
         </p>
 
         <input type="submit" value="Search" />
@@ -36,7 +36,7 @@
 
     <hr />
 
-    <!-- TODO #2 - Loop over jobs map to display all job fields -->
+    <div th:replace="fragments :: results"></div>
 
 </div>
 
