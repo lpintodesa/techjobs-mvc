@@ -32,6 +32,9 @@
     <div th:if="${size}">
         <h3 th:text="${size} + ' Result(s)'">Number of Results </h3>
     </div>
+    <div th:unless="${size}">
+        <h3 th:text="0 + ' Result(s)'">Number of Results </h3>
+    </div>
 
     <table class="job-listing" th:each="result: ${results}">
         <tr th:each="entry: ${result}">
