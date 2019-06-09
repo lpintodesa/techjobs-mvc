@@ -32,7 +32,6 @@ public class SearchController {
         } else {
             results = JobData.findByColumnAndValue(searchType, searchTerm);
         }
-        if (!)
 
         model.addAttribute("default", searchTerm);
         model.addAttribute("size", results.size());
